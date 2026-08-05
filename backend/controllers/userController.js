@@ -27,19 +27,14 @@ const getUserById = async (req, res) => {
     }
 };
 
-// routes/userRoutes.js
-import express from 'express';
-import userController from '../controllers/userController.js';
+const createUser = async (req, res) => {};
+const updateUser = async (req, res) => {};
+const deleteUser = async (req, res) => {};
 
-const router = express.Router();
-
-router.get('/users', userController.getUsers);
-router.get('/users/:id', userController.getUserById);
-router.post('/users', userController.createUser);
-router.put('/users/:id', userController.updateUser);
-router.delete('/users/:id', userController.deleteUser);
-
-export default router;
-
-
-
+export default {
+    getUsers,
+    getUserById,
+    createUser,
+    updateUser,
+    deleteUser
+};
